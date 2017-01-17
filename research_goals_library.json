@@ -1,0 +1,40 @@
+{
+	"research_questions": [
+		"Does the use of wearable devices or contextual touch, like the Apple Watch or 3D Touch on iPhone 6S/6S+, facilitate and encourage low-effort contributions for on-the-go crowds?",
+		"Can on-the-go users be encouraged to contribute data by",
+		"incentivizing them with information about opportunities of interest to them?",
+		"How might I direct individual on-the-go users to contribute specific, small pieces of information that can be scaffolded into higher fidelity information while ensuring that data coverage goals are met?",
+		"Is it possible to encourage on-the-go crowds (individuals on a set route) to contribute lower-fidelity data points that, with scaffolding, yield high-fidelity data while ensuring complete data coverage (e.g. the description of a building facades from data points on architectural style, number of windows/doors, etc.) and (2) will the use of low-effort contributions (ones that do not require completion of a time consuming form) increase user participation in sensing tasks.",
+		"Before the user is prompted to perform a game action, how can we guarantee the action is along the path they are walking?",
+		"Plan to look into Pre-Tracking for this",
+		"As the user performs game actions, how can we store information from phone sensors and processes it to extract meaningful information? ",
+		"Potentially machine learning algorithms and working with Habit Sourcing",
+		"After a user completes a game action, how can we give them feedback to signal they have correctly or incorrectly completed the task? What does feedback look like?",
+		"Either visual or audio feedback through the user’s phone",
+		"As a user continues to play, how should tasks build (or not build) on each other? How does a user progress through the game? What does the end look like? ",
+		"Looking at games like WarioWare and Journey for ideas and examples",
+		"How can we learn about the physical world through user play and use this information and data to grow the existing game world?",
+		"PSYCHOLOGICAL BENEFIT: Does a collective experience (HQ: depends on the CE, are we asking about canonical CEs or is there some particular type of CE) actually help people to feel more connected to others/part of something greater? Does that feeling make them more satisfied/content with life? ",
+		"DESIRABILITY OF EXPERIENCE (helps experience designers): What features/characteristics of an experience attract more users to a) subscribe to it, b) actually participate in an experience event?",
+		"MECHANISMS FOR ACHIEVING OUTCOME: How can we facilitate successful outcomes/documentations? (what incentives, coordination, recruiting, routing, algorithm, etc.) ",
+		"SOCIAL: Do users want to do collective experiences with people they know? Do they rely on existing social groups? How can we help them to form new bonds/relationships?",
+		"How can we build a system with features that will best help beginning web developers complete a complex personal project?",
+		"Similarly, how can we build a system with features that will best help experts compose a usable action plan as efficiently as possible?",
+		"Does the use of wearable devices or contextual touch, like the Apple Watch or 3D Touch on iPhone 6S/6S+, facilitate and encourage low-effort contributions for on-the-go crowds?  ",
+		"Can small pieces of data from on-the-go users be scaffolded together to create information that rivals the fidelity of full surveys?"
+	],
+	"design_arguments": [
+
+
+
+	],
+	"techniques" : [
+
+	],
+	"evidence" : [
+
+
+
+
+	]
+}
