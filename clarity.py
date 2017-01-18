@@ -1,6 +1,7 @@
 from nltk.corpus import wordnet as wn
 from nltk.tag import pos_tag
 import sys
+import string
 
 #To read research_goals_library
 import json
@@ -41,15 +42,67 @@ print '-------Research Questions-------------'
 
 clarityScores = []
 
+remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
+
 for question in research_goals_library["research_questions"]:
-	total_words = len(question.split())
-	for i in [i[0] for i in pos_tag(question.split())]:
+	total_words = 0
+	total_senses = 0
+	#total_words = len(question.split())
+	for i in [i[0] for i in pos_tag(question.translate(remove_punctuation_map).split())]:
 		senses = wn.synsets(i)
-		total_senses += len(senses)
-	
-	print str(float(total_senses)/total_words) 
-	print question
-	print '\n'
+		#print i + ' '+ str(senses)
+		if len(senses) > 0:
+			total_senses += len(senses)
+			total_words += 1
+	clarityScore = float(total_senses)/total_words
+
+	clarityScores.append((clarityScore, {'question':question, 'total_words':total_words, 'total_senses':total_senses}))
+
+	#print str(float(total_senses)/total_words) 
+	#print question + '\n'
+
+sortedScores = sorted(clarityScores, key=lambda x: x[0], reverse=False)
+
+#print '-------sorted-------------'
+
+for sortedScore in sortedScores:
+	print str(sortedScore[0]) + ': ' + sortedScore[1]['question'] + '\n'
+
+
+
+print '-------Claims-------------'
+
+
+clarityScores = []
+
+remove_punctuation_map = dict((ord(char), None) for char in string.punctuation)
+
+for claim in research_goals_library["design_arguments"]:
+	total_words = 0
+	total_senses = 0
+	#total_words = len(claim.split())
+	for i in [i[0] for i in pos_tag(claim.translate(remove_punctuation_map).split())]:
+		senses = wn.synsets(i)
+		#print i + ' '+ str(senses)
+		if len(senses) > 0:
+			total_senses += len(senses)
+			total_words += 1
+	clarityScore = float(total_senses)/total_words
+
+	clarityScores.append((clarityScore, {'claim':claim, 'total_words':total_words, 'total_senses':total_senses}))
+
+	#print str(float(total_senses)/total_words) 
+	#print claim + '\n'
+
+sortedScores = sorted(clarityScores, key=lambda x: x[0], reverse=False)
+
+#print '-------sorted-------------'
+
+for sortedScore in sortedScores:
+	print str(sortedScore[0]) + ': ' + sortedScore[1]['claim'] + '\n'
+
+
+
 
 
 
