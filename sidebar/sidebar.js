@@ -58,6 +58,7 @@ var question_number = 0,
                 'background-color':'rgba(' + rgb['r'] + ',' +rgb['g'] +',' + rgb['b'] + ', 0.5)'  
             }); 
             $('#component-definition').addClass('load');
+            $('#component-definition h5').text('Intervention Definition');
             $('#paragraph-definition').text(components['intervention']['definition']);
         },function() {
             $('.component.intervention').css({
@@ -75,6 +76,7 @@ var question_number = 0,
                 'background-color':'rgba(' + rgb['r'] + ',' +rgb['g'] +',' + rgb['b'] + ', 0.5)'  
             });
             $('#component-definition').addClass('load');
+            $('#component-definition h5').text('Purpose Definition');
             $('#paragraph-definition').text(components['purpose']['definition']); 
         },function() {
             $('.component.purpose').css({
@@ -90,6 +92,7 @@ var question_number = 0,
                 'background-color':'rgba(' + rgb['r'] + ',' +rgb['g'] +',' + rgb['b'] + ', 0.5)'  
             });
             $('#component-definition').addClass('load');
+            $('#component-definition h5').text('Context Definition');
             $('#paragraph-definition').text(components['context']['definition']);
         },function() {
             $('.component.context').css({
@@ -105,6 +108,7 @@ var question_number = 0,
                 'background-color':'rgba(' + rgb['r'] + ',' +rgb['g'] +',' + rgb['b'] + ', 0.5)'  
             }); 
             $('#component-definition').addClass('load');
+            $('#component-definition h5').text('Characteristics Definition');
             $('#paragraph-definition').text(components['characteristics']['definition']);
         },function() {
             $('.component.characteristics').css({
@@ -120,6 +124,7 @@ var question_number = 0,
                 'background-color':'rgba(' + rgb['r'] + ',' +rgb['g'] +',' + rgb['b'] + ', 0.5)'  
             }); 
             $('#component-definition').addClass('load');
+            $('#component-definition h5').text('Affordances Definition');
             $('#paragraph-definition').text(components['affordances']['definition']);
         },function() {
             $('.component.affordances').css({
@@ -135,6 +140,7 @@ var question_number = 0,
                 'background-color':'rgba(' + rgb['r'] + ',' +rgb['g'] +',' + rgb['b'] + ', 0.5)'  
             });
             $('#component-definition').addClass('load');
+            $('#component-definition h5').text('Arguments Definition');
             $('#paragraph-definition').text(components['arguments']['definition']);
         },function() {
             $('.component.arguments').css({
