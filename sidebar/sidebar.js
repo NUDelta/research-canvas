@@ -2,22 +2,22 @@ var question_number = 0,
     colors = ['#e67e22','#3498db','#9b59b6','#f1c40f','#27ae60','#e74c3c','#95a5a6',"#2c3e50"],
     components = {
         'intervention':{
-            'definition':'intervention definition',
+            'definition':'Your technique/contribution to solve the problem',
             'color':'#e67e22'},
         'purpose':{
-            'definition':'purpose definition',
+            'definition':'What is your desired outcome for your intervention?',
             'color':'#3498db'},
         'context':{
-            'definition':'context definition',
+            'definition':'Where is your intervention taking place? In time, space, with what users? What is the setting?',
             'color':'#9b59b6'},
         'characteristics':{
-            'definition':'characteristics definition',
+            'definition':'Traits to describe your intervention - fast, accurate, etc. Try to be specific i.e. 5mph faster.',
             'color':'#f1c40f'},
         'affordances':{
-            'definition':'affordances definition',
+            'definition':'What are the methods/techniques you use to achieve these characteristics and the overrall intervention?',
             'color':'#27ae60'},
         'arguments':{
-            'definition':'arguments definition',
+            'definition':'What are your reasons these affordances work? What is your evidence?',
             'color':'#e74c3c'}
     }
     done_list = [],
