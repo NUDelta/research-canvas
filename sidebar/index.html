@@ -1,0 +1,85 @@
+	<head>
+	<!-- Add in Bootstrap & jQuery -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Research Canvas Sidebar</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="panel panel-primary">
+			<!-- Default panel contents -->
+			<div class="panel-heading">Design Arguments</div>
+		  	<!-- List group -->
+		  	<ul class="list-group">
+		    	<li class="list-group-item">
+		    		<h5>Definition</h5>
+		    		<p>
+		    			Design arguments are reasons for why a design may 
+		    			work. They provide a framework for analyzing, 
+		    				selecting, and evaluating ideas.
+		    	</li>
+		    	<li class="list-group-item">
+		    		<h5>Format</h5>
+		    		<p>If you want to</p>
+		    		<ul>
+		    			<li class="component intervention">design intervention X</li>
+		    			<li class="component purpose">for the purpose/function Y</li>
+		    			<li class="component context">in context Z,</li>
+		    		</ul>
+		    		<p>then you are best advised to<p>
+		    		<ul>
+		    			<li class="component characteristics">
+		    				give that intervention the characteristics A, B, and C, and to
+		    			</li>
+		    			<li class="component affordances">
+		    				do that via affordances and procedures K, L, and M,
+		    			</li>
+		    			<li class="component arguments">
+		    				because of arguments P, Q, and R.
+		    			</li>
+		    		</ul>	
+		    	</li>
+		    	<li class="list-group-item" id="component-definition">	
+		    		<h5>Component Definition</h5>
+		    		<p id="paragraph-definition">
+
+		    		</p>
+		    	</li>
+		    	<li class="list-group-item">
+		    		<h5>Example</h5>
+		    		<p>
+		    			If you want to 
+		    			<span class="component intervention">Create an express train that connect the Pink and Green lines</span>
+		    			 for 
+		    			<span class="component purpose">the purpose of saving time riding the “L” for people transferring between the pink and green line</span> 
+		    			in 
+		    			<span class="component context">the context of Chicago public transportation</span>
+		    			, then you are best advised to  
+		    			<span class="component characteristics">move the train 5mph faster, have no transfers, have 5 less stops</span>
+		    			, and to do that via 
+		    			<span class="component affordances">
+		    				a new train with upgraded motor, having concise routes to key stops, and ignoring stops where there are typically few people boarding/exiting
+		    			</span>
+		    			because of 
+		    			<span class="component arguments">a faster train will cover more distance in less time, no transfers means there is no wait time, less stops means less total time stopping.</span>
+
+
+		    		</p>
+
+		    	</li>
+		  	</ul>
+		</div>
+	</div>
+</body>
+<!-- Used Highcharts for DTR Bars -->
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<!-- This is for when it was draggable -->
+<script src="https://rawgithub.com/highslide-software/draggable-points/master/draggable-points.js"></script>
+<script src="sidebar.js"></script>

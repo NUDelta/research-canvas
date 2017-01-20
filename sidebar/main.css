@@ -1,0 +1,37 @@
+body {
+	width:300px;
+}
+h5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+p{
+	font-size:0.8em;
+	margin-bottom: 0px;
+}
+.list-group-item li{
+	font-size:0.8em;
+}
+.list-group-item{
+	padding: 5px 10px;
+}
+.list-group-item .component{
+	border-bottom: 1px dotted #000;
+    text-decoration: none;
+}
+
+#component-definition{
+    display: none;
+    opacity: 0;
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+#component-definition.load {
+	display: block;
+    opacity: 1;
+}
