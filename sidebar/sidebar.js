@@ -64,7 +64,7 @@ var question_number = 0,
             $('.component.intervention').css({
                 'background-color':'#ffffff'
             });
-            $('#component-definition').removeClass('load');
+            // $('#component-definition').removeClass('load');
         }); 
 
 
@@ -82,7 +82,7 @@ var question_number = 0,
             $('.component.purpose').css({
                 'background-color':'#ffffff'
             });
-            $('#component-definition').removeClass('load');
+            // $('#component-definition').removeClass('load');
         });
 
         $('.component.context').hover(function(){
@@ -98,7 +98,7 @@ var question_number = 0,
             $('.component.context').css({
                 'background-color':'#ffffff'
             });
-            $('#component-definition').removeClass('load');
+            // $('#component-definition').removeClass('load');
         });
 
          $('.component.characteristics').hover(function(){
@@ -114,7 +114,7 @@ var question_number = 0,
             $('.component.characteristics').css({
                 'background-color':'#ffffff'
             });
-            $('#component-definition').removeClass('load');
+            // $('#component-definition').removeClass('load');
         });
 
         $('.component.affordances').hover(function(){
@@ -130,7 +130,7 @@ var question_number = 0,
             $('.component.affordances').css({
                 'background-color':'#ffffff'
             });
-            $('#component-definition').removeClass('load');
+            // $('#component-definition').removeClass('load');
         });
 
         $('.component.arguments').hover(function(){
@@ -146,7 +146,7 @@ var question_number = 0,
             $('.component.arguments').css({
                 'background-color':'#ffffff'
             });
-            $('#component-definition').removeClass('load');
+            // $('#component-definition').removeClass('load');
         });
     },
     //from http://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
